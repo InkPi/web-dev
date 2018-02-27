@@ -1,0 +1,21 @@
+div {
+	width: 100px;
+	height: 100px;
+	/*position:static;*/
+	opacity:0.5;
+}
+.red {
+	background-color:red;
+}
+.green {
+	background-color:green;
+	/*position:relative;*/
+	position:absolute;
+	top: 20px;
+	left: 40px;
+/*	top:10px;
+	left:10px;*/ /*for relative*/
+}
+.blue {
+	background-color:blue;
+}

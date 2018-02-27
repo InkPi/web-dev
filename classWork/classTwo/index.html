@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head><title>The New York Times| Copycat</title>
+		<style>
+/*			h1 {
+				color: green;
+				opacity:0.5;
+			}
+			h1:hover {
+				color: blue;
+			}
+			button {
+				padding: 10px;
+				font-size: 16px;
+				background-color: yellow;
+				border-radius:10px;//I put it myself
+				outline:none;//I put it myself, shirley's
+				font-family: sans-serif;//I put it myself
+			}
+			button:hover {
+				background-color: orange;
+				color:white;
+			}*/
+			h1{/*margin-left:100px;*/
+				margin: 0 0  0 100px;}
+			h2{
+				border: 3px dotted red; /*solid*/
+				width:280px;
+				padding: 20px;
+			}
+
+			h2:hover{
+				opacity:0;
+			}
+			#boy {
+				height: 150px;
+			}
+			#ghost {
+				height:150px;
+				transform: rotate(120deg);
+			}
+			#ghost:hover {
+				opacity:0;
+				transition: ease 2s; /*both 2 ways same. Many multiple ways do same thing; more complex:transition 1st*/
+				/*transition-duration: 2s;//I put it myself*/
+				transform: rotate(120deg);/*I put it myself; it doesn't work in hover*/
+			}
+			p {
+				float:left;
+				margin-right:10px; /*this works*/
+			}
+/*			p:nth-child(2) {
+				margin-left: 80px;
+			} *//*doesnt work. I wrote*/
+		</style>
+	</head>
+	<body>
+		<!-- <h1>Class Two</h1> -->
+		<h1>I'm a human :D</h1>
+		<ol>
+			<li>Nelson Mendel</li>
+			<li>Harry Potter</li>
+		</ol>
+		<img src="images/boy.png" id="boy">
+		<h2>I'm just a ghost! Mwahaha</h2>
+				<ul>
+			<li>Emoji Ghost</li>
+			<li>Casper</li>
+		</ul>
+		<img src="images/Ghost_Emoji_2.png" id="ghost">
+		<!-- <button>Apply Now</button> -->
+		<p>This is my 1st paragraph</p>
+		<p> This is my 2nd paragraph</p>
+	</body>
+</html>

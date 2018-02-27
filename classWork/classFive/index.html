@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body {
+				background-color: red;
+			}
+/*			@media only screen and (max-width: 500px) { /didn't work for 300 as width too small on website
+				body {
+					background-color: yellow;}
+				}*/
+			div{
+				border: 3px solid yellow; height:200px; width:1000px;
+			}
+			@media only screen and (max-width:600px) {
+				div{
+					width:300px;
+				}
+			}
+			#video {
+				height:900px;
+				width:100%;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div></div> <!-- doesn't work if put this inside: style="border: 3px solid yellow; height:200px; width:1000px"-->
+		<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/wAEzpwvrveg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+	</body>
+</html>
