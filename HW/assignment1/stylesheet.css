@@ -1,0 +1,338 @@
+/** { box-sizing: border-box }
+*/
+body {margin:0px;
+	padding:0px;
+	font-family: "DIN Next W01 Regular", Arial, sans-serif;}
+/*header nav*/
+nav {
+	position:fixed;
+	background-color:black;
+	color:white;
+	width: 100%;
+	margin-top:-20px;
+	padding-top: 10px;
+	padding-bottom:10px;
+	display:inline-block;
+	z-index:2;
+}
+#logo {
+	position:relative;
+	margin-top:20px;
+	width:200px; /*Change from% to not scale it*/
+}
+
+ul {
+	position:relative;
+	display:inline-block;
+	list-style: none;
+	overflow:hidden;
+	/*width:40%; this will collapse menu to ul when smaller*/
+	width:600px;
+}
+.menu {	
+	position:relative;
+	float: right;
+	right: 80px;
+	top: 22px;
+}
+li {
+	padding-right: 30px;
+	float: left;
+	font-size: 13px;
+}
+
+#login {
+	position:relative;
+	display:inline-block;
+	float: right;
+	color:red;
+	border: 1px white solid;
+	top: 26px;
+	right: -610px;
+	padding: 12px 16px 12px 16px;
+	background-color:black;
+	width:12%;
+	color: white;
+}
+#login:hover {
+	background-color:white;
+	color:black;
+}
+
+
+
+/*Global Elements*/
+a {
+	text-decoration:none;
+	color:white;
+}
+a:hover {
+	color: #FFCB04;
+}
+/*a:active {
+	color:white;}*/
+ol {
+	list-style:none;
+}
+
+
+/*Slideshow Homepage Background Img*/
+.backg {
+	/*background-image: url("https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/676/big/SetApart.jpg?1518812490");*/
+	/*position:absolute;*/
+	width:100%;
+	height: 470px;
+	margin-top:0px;
+	/*background-repeat:no-repeat;*/
+	background-size:cover;
+	background: linear-gradient(
+		to top,
+		black,
+		/*white,*/
+		transparent),
+	url("https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/676/big/SetApart.jpg?1518812490") no-repeat center;
+}
+#search {
+	position: relative;
+	top: 90px;
+	margin-left:54px;
+}
+#holder1{
+	padding: 10px 97px 10px 97px;
+	border: 1px solid black;
+	opacity: 0.85;
+}
+#submit1 {
+	background-color:#FFCB04;
+	border: 1px solid black;
+	padding: 10px 14px 10px 14px;
+}
+.sliderContent {
+	position:absolute; /*position and bottom for upward resize direc*/
+	bottom: 30%; /*change value*/
+	width:60%;
+	padding:0;
+	margin-left:54px;
+}
+#miniTitle {
+	color:#FFCB04;
+}
+
+.white{
+	color:white;
+}
+
+
+/*Row extras*/
+#blogLink{
+	color:black;
+}
+
+
+
+
+/*First Row of Three*/
+.post {
+	height: 500px;
+	width: 370px;
+	background: #f7f7f7;
+	float: left; /*I added*/
+	margin-right: 20px; 
+}
+
+.img1 {
+	background-image: url("https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/675/small/rochelle-nicole-84911.jpg?1516998978");
+	width:100%;
+	height:150px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.img2 {
+	background-image: url("https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/674/small/andrew-neel-137513.jpg?1516221975");
+	width:100%;
+	height:150px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.img3 {
+	background-image: url("https://s3-us-west-2.amazonaws.com/nycda-assets/posts/hero_images/000/008/673/small/heidi-sandstrom-466619_%281%29.jpg?1515619624");
+	width:100%;
+	height:150px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.row {
+	margin: 0 auto; /*Need for horiz center*/
+	margin-top: 50px;
+	display: table; /*Need for horiz center*/
+}
+
+
+
+/*Other Rows Below It*/
+.post2 {
+	height: 450px;
+	width: 370px;
+	background: #f7f7f7;
+	float: left; /*I added*/
+	margin-right: 20px; 
+}
+
+#postPic {
+	height: 150px;
+	overflow: hidden;
+    width:100%;
+}
+#parag {
+	font-size:13px;
+	line-height: 1.6; /*line-height spacing*/
+}
+
+
+.row2 {
+	margin: 0 auto; /*Need for horiz center*/
+	margin-top: 30px;
+	display: table; /*Need for horiz center*/
+}
+
+
+
+
+/*content, content date author*/
+.content{
+	width:80%;
+	text-align:left;
+}
+#date{
+	position: relative;
+	display:inline-block;
+	right: 70px;
+
+}
+#author{
+	position:relative;
+	display:inline-block;
+	left: 70px;
+}
+
+
+
+/*Index Page #*/
+.indexBlock {
+	position:relative;
+	width:30%;
+	height:60px;
+	margin: 0 auto; /*Need for horiz center*/
+	margin-top: 150px;
+	display:block;
+}
+
+
+
+#highlight {
+	background-color:#ffcb04;
+	color:white;
+	padding: 10px;
+	width:10px;
+
+}
+
+#index {
+	padding: 10px;
+}
+#index2 {
+	padding: 10px;
+}
+#index:hover {
+	background-color:silver;
+	color:#ffcb04;
+}
+
+
+/*Footer*/
+footer {
+	width: 100%;
+	height:500px;
+	background-color:black;
+	color:white;
+}
+
+.col1 {
+	display:block;
+	float:left;
+	padding-left: 5%;
+	padding-right: 8%;
+	width:8%;
+}
+
+#marginBottom{
+	margin-bottom: 0px;
+}
+#marginBottom:nth-child(1) {
+	padding-right: 6px;
+}
+
+.col2 { /*column2+3*/
+	display:block;
+	float:left;
+	width:10%;
+	font-size:13px;
+}
+
+.col3 { /*column2+3*/
+	display:block;
+	float:left;
+	width:20%;
+	font-size:13px;
+}
+
+.col4{
+	display:block;
+	float:left;
+	width: 400px;
+/*	width:25%;
+*/	/*padding-right: 5%;*/
+}
+
+.ftRow1 {
+	position:relative;
+	width:85%; /*put width less than 100 to see centering*/
+	height: 300px;
+	top:40px;
+	display:block;
+	margin: 0 auto; /*Need for horiz center*/
+	margin-top: 50px;
+}
+
+.col5 {
+	padding-top:5px;
+	padding-left: 5%;
+	width: 85%;
+	height: 200px;
+	margin: 0 auto;
+}
+
+/*Email form*/
+
+#holder{
+	padding: 10px 97px 10px 10px;
+	/*padding: 10px 97px 10px 97px;*/
+	width:200px;
+}
+#submit2 {
+	background-color:#FFCB04;
+/*	padding: 10px 100px 10px 140px;*/
+	padding: 10px 97px 10px 100px;
+	/*padding: 10px 97px 10px 97px;*/
+	margin-top: 5px;
+	width:310px; /*don't do 100%, set px*/
+}
+
+#submit:hover {
+	transition: ease 2s;
+	background-color:black;
+	color:white;
+}
