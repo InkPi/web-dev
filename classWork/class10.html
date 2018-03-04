@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<script>
+var array = ["Saturday", "Saturday", "Monday", "Tuesday", "Wednesday","Thurday","Friday", "Sunday", "Friday"];
+
+// console.log(array[0]);
+//if first array is same as next one then what of next one..
+for(var i=0; i < array.length; i++){
+	for (var j=i+1; j<array.length; j++) { //must be another letter[j], i+1 not 1
+		//first time 1 works, 2nd time both i and j = 1, etc=same value
+		if(array[i]===array[j]) {
+			console.log("we have a match and it is" + " " + array[i]);
+			// array[i] or j is fine; both are a match
+		}
+	}
+// 	if (array[0] ===array[1]) {
+// 		console.log("we have a match and that's " + array[i]);
+	}
+// }
+// var i;
+// if(i=0; i <array.length; i++) {
+// 	console.log(array[i]);
+// } else if (i!=i+1) {
+// 	array.push(array[i]);
+// }
+</script>
+</body>
+</html>

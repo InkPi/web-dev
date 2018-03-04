@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<script>
+var temp= 75;
+
+if (temp>75) {
+	console.log("it is hot outside");
+} else if (temp> 50) {
+	console.log("It is warm outside");
+} else {
+	console.log("Brr! It's freesing out there!");
+}
+
+function fizzBuzz(max) {
+for (x=1; x<= max; x+=1){
+        if(x%3 === 0 && x%5 === 0) {
+        console.log("fizzbuzz");
+    } else if (x%3===0) {
+        console.log("fizz");
+    } else if (x%5===0) {
+        console.log("buzz");
+    } else {console.log(x);}																									}
+    }
+   fizzBuzz(20);
+
+
+</script>
+</body>
+</html>
