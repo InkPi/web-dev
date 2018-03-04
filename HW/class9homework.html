@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+	<button onclick="timeGreet()">Greetings</button>
+	<p id="greetP"></p>
+<script>
+	function timeGreet() {
+		var greet;
+		var time = new Date().getHours();
+		if(time < 10) {
+			greet = "Good Morning";
+		} else if (time < 12) {
+			greet = "Good Evening";
+		} else if (time <20) {
+			greet= "Good Afternoon";
+		} else if (time<24) {
+			greet = "Good Night";
+		}
+	document.getElementById("greetP").innerHTML = greet;
+}
+	function findDuplicates(arrayOne) {
+		var i,
+		leng= arrayOne.length,
+		result = [],
+		obj = {};
+		for (i=0; i<leng; i++) {
+			obj[arrayOne[i]]=0;
+		}
+		for (i in obj) {
+			result.push(i);
+		}
+		return result;
+	}
+	var ar = ["pink", "pink", 0, 1, 5, 5, -5, -1];
+	document.write(findDuplicates(ar));
+
+
+
+
+
+	function emailName(email) {
+		var name = email.substring(0, email.lastIndexOf("@"));
+		var domain = email.substring(email.lastIndexOf("@")+1);
+		// document.write(name);
+		var email = " ";
+		document.write(name);
+	}
+	emailName("shoaib@yahoo.com");
+</script>
+</body>
+</html>
