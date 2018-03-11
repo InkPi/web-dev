@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+	<div onmouseover="hoverImg(this)" onmouseout="hoverAway(this)">
+	<img src="images/sailor_moonSQ.jpg" onmouseover="hoverImg(this)" onmouseout="hoverAway(this)" />
+	<p id="text-display">Sailor Moon is the best!</p>
+</div>
+
+	 
+<script type="text/javascript">
+	//4.	write a JS program that:
+
+
+// -Change image and description when mouse enters and when mouse leaves (3 distinct texts)
+// Hints: HTML and Javascript (mouse over / mouse leave)
+
+	function hoverImg(x){
+		// var z = document.getElementById("text-display");
+		x.src="images/onePieceSQ.png";
+		document.getElementById("text-display").innerHTML = "No! One Piece is the best!"
+	}
+	function hoverAway(z){
+		z.src="images/sailor_moonSQ.jpg";
+		document.getElementById("text-display").innerHTML = "Sailor Moon is the best!"
+	}
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+	<button onclick="timeGreet()">Greetings</button> <!-- part1 -->
+	<p id="greetP"></p>
+
+	<br />
+
+	<button onclick="changeText()">AnimeFans</button> <!-- part2 -->
+	<p id="pt2">Sailor Moon Is the Best!</p>
+
+	<br />
+
+	<img>
+<script>
+// Problem one: Write a javascript program that greets the user based on current time.
+//1.	Write a JS program that greets the user based on the time. Hint : Good Morning, Good evening
+	function timeGreet() {
+		var greet;
+		var time = new Date().getHours();
+		if(time < 10) {
+			greet = "Good Morning";
+		} else if (time < 12) {
+			greet = "Good Evening";
+		} else if (time <20) {
+			greet= "Good Afternoon";
+		} else if (time<24) {
+			greet = "Good Night";
+		}
+	document.getElementById("greetP").innerHTML = greet;
+}
+
+
+//2.	Write a JS program that changes text when a button is clicked.
+
+	function changeText(){
+		var x= document.getElementById("pt2").innerHTML = "No! One Piece is the best!";
+	}
+
+
+// 3.	Write a JS program that changes the picture when hover over.
+
+
+//4.	write a JS program that:
+
+// -Change image and description when mouse enters and when mouse leaves (3 distinct texts)
+// Hints: HTML and Javascript (mouse over / mouse leave)
+
+
+</script>
+</body>
+</html>
